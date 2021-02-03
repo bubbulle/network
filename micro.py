@@ -42,7 +42,6 @@ def read(connection):
             #print('received ' + str(data))
             if data:
                 #print(type(data))
-                # waveFile.writeframes(data)
                 stream.write(data)
                 #print('sending data back to the client')
                 connection.sendall(data)

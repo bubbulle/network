@@ -36,7 +36,7 @@ try:
         if data == '':
             data = silence
         frames.append(data)
-        print('sending ' + str(data))
+        # print('sending ' + str(data))
         sock.sendall(data)
         data = sock.recv(4096)
     print("finished recording")

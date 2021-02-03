@@ -1,8 +1,7 @@
 import pyaudio
 import socket
 import sys
-import wave
-from _thread import *
+from _thread import start_new_thread
 
 
 FORMAT = pyaudio.paInt16
@@ -10,7 +9,6 @@ CHANNELS = 2
 RATE = 44100
 CHUNK = 1024
 RECORD_SECONDS = 5
-WAVE_OUTPUT_FILENAME = "blbl.wav"
 ThreadCount = 0
 
 
